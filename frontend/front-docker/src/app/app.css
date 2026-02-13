@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset básic */
 * {
   box-sizing: border-box;
   font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
@@ -27,17 +27,15 @@
   animation: fadeIn 0.6s ease;
 }
 
-/* Título */
+/* Títul */
 h1 {
   margin-bottom: 1.5rem;
   font-size: 1.9rem;
   font-weight: 700;
   background: linear-gradient(90deg, #6366f1, #a78bfa, #38bdf8);
 
-  /* Propiedad estándar */
   background-clip: text;
 
-  /* Prefijo para compatibilidad (Chrome, Safari, iOS) */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -67,7 +65,7 @@ input:focus {
   background: #ffffff;
 }
 
-/* Botón */
+/* Botó */
 button {
   width: 100%;
   padding: 0.9rem 1rem;
@@ -91,7 +89,7 @@ button:active {
   box-shadow: 0 6px 12px rgba(129, 140, 248, 0.25);
 }
 
-/* Respuesta */
+/* Resposta */
 p {
   margin-top: 1.2rem;
   padding: 0.9rem 1rem;
@@ -102,7 +100,7 @@ p {
   animation: popIn 0.35s ease;
 }
 
-/* Animaciones */
+/* Animacions */
 @keyframes fadeIn {
   from {
     opacity: 0;
