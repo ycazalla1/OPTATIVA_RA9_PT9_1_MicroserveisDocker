@@ -1,0 +1,126 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+:host {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0e7ff, #f5d0fe, #bae6fd);
+  padding: 2rem;
+}
+
+/* Card principal */
+.container {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 2.5rem 3rem;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  animation: fadeIn 0.6s ease;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #6366f1, #a78bfa, #38bdf8);
+
+  /* Propiedad estándar */
+  background-clip: text;
+
+  /* Prefijo para compatibilidad (Chrome, Safari, iOS) */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Input */
+input[type="text"] {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #c7d2fe;
+  background: #f8fafc;
+  color: #1e293b;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+input:focus {
+  border-color: #818cf8;
+  box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.35);
+  background: #ffffff;
+}
+
+/* Botón */
+button {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  background: linear-gradient(135deg, #818cf8, #c084fc, #7dd3fc);
+  color: #1e293b;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(129, 140, 248, 0.35);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 12px rgba(129, 140, 248, 0.25);
+}
+
+/* Respuesta */
+p {
+  margin-top: 1.2rem;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #eef2ff, #f5e8ff);
+  color: #1e293b;
+  border: 1px solid #c7d2fe;
+  animation: popIn 0.35s ease;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

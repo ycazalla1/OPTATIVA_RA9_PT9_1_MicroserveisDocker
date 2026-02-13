@@ -1,8 +1,10 @@
-<h1>Hello World Microserveis</h1>
+<div class="container">
+  <h1>Hello World Microserveis</h1>
 
-<input type="text" [(ngModel)]="nom" placeholder="Escriu el teu nom">
-<button (click)="enviarNom()">Enviar</button>
+  <input type="text" [(ngModel)]="nom" placeholder="Escriu el teu nom">
+  <button (click)="enviarNom()">Enviar</button>
 
-@if (resposta) {
-  <p>{{ resposta }}</p>
-}
+  @if (resposta) {
+    <p>{{ resposta }}</p>
+  }
+</div>
