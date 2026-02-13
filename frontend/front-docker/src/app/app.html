@@ -1,8 +1,17 @@
 <div class="container">
   <h1>Hello World Microserveis</h1>
 
-  <input type="text" [(ngModel)]="nom" placeholder="Escriu el teu nom">
+  <input type="text" [(ngModel)]="nom" name="nom" placeholder="Escriu el teu nom">
   <button (click)="enviarNom()">Enviar</button>
+  <!-- <form (ngSubmit)="enviarNom()">
+    <input
+      type="text"
+      [(ngModel)]="nom"
+      name="nom"
+      placeholder="Escriu el teu nom">
+
+    <button type="submit">Enviar</button>
+  </form> -->
 
   @if (resposta) {
     <p>{{ resposta }}</p>
