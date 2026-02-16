@@ -1,19 +1,16 @@
 <div class="container">
+  <!-- Títol de la pàgina o del component. -->
   <h1>Hello World Microserveis</h1>
 
+  <!-- Camp de text perquè l'usuari escrigui el nom -->
   <input type="text" [(ngModel)]="nom" name="nom" placeholder="Escriu el teu nom">
+
+  <!-- Botó que executa una funció quan es fa clic. -->
   <button (click)="enviarNom()">Enviar</button>
-  <!-- <form (ngSubmit)="enviarNom()">
-    <input
-      type="text"
-      [(ngModel)]="nom"
-      name="nom"
-      placeholder="Escriu el teu nom">
 
-    <button type="submit">Enviar</button>
-  </form> -->
-
+  <!-- Només mostra el contingut si la variable respostaté valor -->
   @if (resposta) {
+    <!-- Mostra en pantalla el contingut de la variable resposta -->
     <p>{{ resposta }}</p>
   }
 </div>
